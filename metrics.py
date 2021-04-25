@@ -121,6 +121,7 @@ def frequency_weighted_IU(eval_segm, gt_segm):
     frequency_weighted_IU_ = np.sum(frequency_weighted_IU_) / sum_k_t_k
     return frequency_weighted_IU_
 
+
 '''
 Auxiliary functions used during evaluation.
 '''
@@ -172,6 +173,7 @@ def check_size(eval_segm, gt_segm):
 
     if (h_e != h_g) or (w_e != w_g):
         raise EvalSegErr("DiffDim: Different dimensions of matrices!")
+
 
 '''
 Exceptions
